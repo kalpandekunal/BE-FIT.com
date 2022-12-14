@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        #body1{
+            background-color: aliceblue;
+            margin-bottom:100px;
+        }
+        #nav{
+            display:flex;
+            width:100%;
+            height:80px;
+            background-color: rgb(0, 110, 255);
+            justify-content: space-around;
+            align-items: center;
+        }
+        #nav>img{
+            width:15%;
+        }
+        #nav h1{
+            color: white;
+            font-size: 40px;
+        }
+        #nav>p{
+            color: white;
+            font-size: 23px;
+        }
+        #nav>div button{
+            font-size: 18px;
+            background-color: white;
+            color: rgb(0, 153, 255);
+            padding-left:10px;
+            padding-right:10px;
+            padding-top:5px;
+            padding-bottom:5px;
+            border-radius:5px;
+            border: 0px;
+        }
+        #banner{
+
+            display:flex;
+            background-color:rgb(30, 56, 170);
+            margin-bottom:80px;
+        }
+        #banner>div{
+            width:50%;
+            justify-content: space-between;
+            padding-top:100px;
+            padding-left:60px;
+            padding-bottom:60px;
+        }
+        #banner h1{
+            font-size: 60px;
+            color: white;
+        }
+        #banner p{
+            font-size: 30px;
+            color:white;
+        }
+        .head{
+            text-align: center;
+            font-size: 40px;
+        }
+        .head1{
+            text-align: center;
+            font-size: 25px;
+
+        }
+        #slide{
+           
+            width:90%;
+            height:150px;
+            margin:auto;
+            display:flex;
+            justify-content: space-between;
+            margin-top:50px;
+        }
+        #slide>img{
+            border-radius: 10px;
+        }
+        #btn{
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 100px;
+        }
+        #btn>button{
+            font-size: 25px;
+            background-color: rgb(39, 140, 255);
+           
+            border: 0px;
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding:10px;
+            border-radius: 50px;
+        }
+        .b1{
+            margin-right:50px;
+        }
+        .head3{
+            text-align: center;
+            font-size: 40px;
+        }
+
+        #banner2{
+            display:flex;
+            margin-top:150px;
+
+        }
+        #banner2>div{
+            width:50%;
+            justify-content: space-between;
+            margin-left:50px;
+            
+        }
+        #banner2 p{
+            font-size: 30px;
+        }
+        #banner2 h1{
+            font-size: 50px;
+        }
+        #banner2 li{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        #banner2>div button{
+            padding:10px;
+            padding-left:30px;
+            padding-right:30px;
+            background-color: rgb(39, 140, 255);
+            color: white;
+            border:0px;
+            border-radius: 40px;
+        }
+
+
+
+        #banner3{
+            display:flex;
+            margin-top:150px;
+        }
+        #banner3>div{
+            width:50%;
+            justify-content: space-between;
+            margin-left:80px;
+            
+        }
+        #banner3 p{
+            font-size: 30px;
+        }
+        #banner3 h1{
+            font-size: 50px;
+        }
+        #banner3 li{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        #banner3>div button{
+            padding:10px;
+            padding-left:30px;
+            padding-right:30px;
+            background-color: rgb(39, 140, 255);
+            color: white;
+            border:0px;
+            border-radius: 40px;
+        }
+
+
+        #banner4{
+            display:flex;
+            margin-top:150px;
+
+        }
+        #banner4>div{
+            width:50%;
+            justify-content: space-between;
+            margin-left:50px;
+            
+        }
+        #banner4 p{
+            font-size: 30px;
+        }
+        #banner4 h1{
+            font-size: 50px;
+        }
+        #banner4 li{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        #banner4>div button{
+            padding:10px;
+            padding-left:30px;
+            padding-right:30px;
+            background-color: rgb(39, 140, 255);
+            color: white;
+            border:0px;
+            border-radius: 40px;
+        }
+
+        .head4{
+            text-align: center;
+            font-size: 40px;
+        }
+
+        #free{
+            width:70%;
+            height:900px;
+            
+            margin:auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-bottom: 150px;
+        }
+        #free>div{
+            width:28%;
+            height:100%;
+            
+            padding-left: 30px;
+            padding-top: 50px;
+            background-color: rgb(80, 80, 80);
+            color: white;
+            border-radius: 5px;
+        }
+        #free>div h1{
+            font-size: 40px;
+        }
+        #free>div p{
+            font-size: 17px;
+        }
+        #free>div button{
+            /* padding-left: 25px;
+            padding-right: 25px; */
+            padding:15px 25px 15px 25px;
+            border-radius: 40px;
+            border:0px;
+            background-color: rgb(39, 140, 255);
+            color:white;
+        }
+
+        #last{
+            text-align: center;
+            background-color: aliceblue;
+            padding-top:70px;
+            padding-bottom:50px;
+        }
+        #last p{
+            font-size: 25px;
+        }
+        #last button{
+            padding:15px 25px 15px 25px;
+            border-radius: 40px;
+            border:0px;
+            color:white;
+            background-color: rgb(39, 140, 255);
+        }
+
+        #footer{
+            width:100%;
+            height:200px;
+            display: flex;
+            margin:auto;
+            justify-content: space-around;
+        }
+        #footer>div p{
+            color: grey;
+        }
+        .head5{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="body1">
+    <div id="nav">
+        <!-- <img src="./Logo/logo.png" alt=""> -->
+        <!-- <img src="C:\Users\91705\Desktop\Project1\scared-servant-614\Logo\logo.png" alt=""> -->
+        <h1>BE-FIT</h1>
+        <p>Get App</p>
+        <p>Workout Plans</p>
+        <p>Exercises</p>
+        <p>Community</p>
+        <p>Coach</p>
+        <p>Elite</p>
+        <p>Login</p>
+        <div>
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <div id="banner">
+        <div>
+            <h1>MANAGE & TRACK ALL YOUR WORKOUTS IN ONE PLACE</h1>
+            <p>#1 Popular Workout Tracking Platform </p>
+            <p>Stay Strong Together</p>
+            <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/googleplay.png" alt="">
+            <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/appstore.png" alt="">
+        </div>
+        <div>
+            <img width="100%" src="https://www.jefit.com/wp/wp-content/uploads/2022/03/website_hero_watch-1536x1280.png" alt="">
+        </div>
+    </div>
+    <h1 class="head">CONNECT WITH OVER 10 MILLION BE-FIT MEMBERS</h1>
+    <h3 class="head1">As the most active workout community,we invite you and your
+        friends to join us and support each other.
+    </h3>
+
+    <div id="slide">
+        <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/14members-150x150.png" alt="">
+        <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/7members-150x150.png" alt="">
+        <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/18members-150x150.png" alt="">
+        <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/1members-150x150.png" alt="">
+        <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/16members-150x150.png" alt="">
+        <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/6members-150x150.png" alt="">
+        <img src="https://www.jefit.com/wp/wp-content/uploads/2021/11/15members-150x150.png" alt="">
+        
+    </div>
+    <div  id="btn">
+        <button class="b1">TRENDING TOPICS</button>
+        <button class="b2">JOIN NOW</button>
+    </div>
+    <h1 class="head3">BE-FIT COVERS ALL OF YOUR WORKOUT NEEDS</h1>
+
+    <div id="banner2">
+        <div>
+            <img width="100%" src="https://www.jefit.com/wp/wp-content/uploads/2022/08/web1-1536x1536.png" alt="">
+        </div>
+        <div>
+            <p>WORKOUT TRACKING</p>
+            <h1>PERSONALIZE YOUR  WORKOUT PLANS</h1>
+            <ul>
+                <li>1400+ exercises with instructions</li>
+                <li>Pro-designed workout plans</li>
+                <li>Support custom exercises</li>
+                <li>Flexible workout planning tool</li>
+            </ul>
+            <button>JOIN NOW</button>
+        </div>
+    </div>
+
+    <div id="banner3">
+        
+        <div>
+            <p>SMART WATCH INTEGRATION</p>
+            <h1>TRAIN & LOG SEAMLESSLY IN GYM AND HOME</h1>
+            <ul>
+                <li>Log training with one-click</li>
+                <li>Control rest time easily</li>
+                <li>Available on mobile and watch</li>
+                <li>Audio and video instructions</li>
+            </ul>
+            <button>JOIN NOW</button>
+        </div>
+
+        <div>
+            <img width="100%" src="https://www.jefit.com/wp/wp-content/uploads/2022/08/web2-1536x1536.png" alt="">
+        </div>
+    </div>
+
+    <div id="banner4">
+        <div>
+            <img width="100%" src="https://www.jefit.com/wp/wp-content/uploads/2022/08/web3-1536x1536.png" alt="">
+        </div>
+        <div>
+            <p>PROGRESS TRACKING</p>
+            <h1>VIEW PRORESS & REACH NEW LIMITS</h1>
+            <ul>
+                <li>Track workout time and weightlifting</li>
+                <li>Set target muscles and body measurements</li>
+                <li>Understand muscle recovery rate</li>
+                <li>Set 1RM goals and refresh records</li>
+            </ul>
+            <button>JOIN NOW</button>
+        </div>
+    </div>
+</div>
+
+    <h1 class="head4">PLANS THAT SUIT YOU BEST</h1>
+
+    <div id="free">
+        <div>
+            <img src="https://tr.rbxcdn.com/1569ca5f1ffa5705cded4e460bba406a/150/150/Image/Png" alt="">
+            <h1>FREE</h1>
+            <p>Basic</p>
+            <p>Ads supported</p>
+            <p>Flexible workout planner</p>
+            <p> Top-notch log tracker</p>
+            <p>1400+ exercises library</p>
+            <p>Body stats tracking tools</p>
+            <p>Support interval training</p>
+            <button>FREE DOWNLOAD</button>
+        </div>
+        <div>
+            <img src="https://tr.rbxcdn.com/1569ca5f1ffa5705cded4e460bba406a/150/150/Image/Png" alt="">
+            <h1>Elite</h1>
+            <h1>Monthly</h1>
+            <p>$12.99/month</p>
+            <p>All BASIC plan features</p>
+            <p>No ads</p>
+            <p>Comprehensive training</p>
+            <p>reports</p>
+            <p>Advances tracking</p>
+            <p>features</p>
+            <p>Compare records with</p>
+            <p>friends</p>
+            <p>Exercise tips from BE-FIT</p>
+            <p>experts</p>
+            <p>Premium workout plans</p>
+            <p>More...</p>
+            <button>LEARN MORE</button>
+            <p>$12.99 billed / month</p>
+        </div>
+        <div>
+            <img src="https://tr.rbxcdn.com/1569ca5f1ffa5705cded4e460bba406a/150/150/Image/Png" alt="">
+            <h1>Elite</h1>
+            <h1>Yearly</h1>
+            <p>$5.83/month</p>
+            <p>All BASIC plan features</p>
+            <p>No ads</p>
+            <p>Comprehensive training</p>
+            <p>reports</p>
+            <p>Advances tracking</p>
+            <p>features</p>
+            <p>Compare records with</p>
+            <p>friends</p>
+            <p>Exercise tips from BE-FIT</p>
+            <p>experts</p>
+            <p>Premium workout plans</p>
+            <p>More...</p>
+            <button>LEARN MORE</button>
+            <p> Save 55%, $69.99 billed / year</p>
+
+        </div>
+    </div>
+    <div id="last">
+        <h1>WANT TO BUILD YOUR OWN WORKOUT PLAN?</h1>
+        <P>Customize your workout plan with over 3000 free exercise in Befit Workout Plan Builder. And easily share with friends. </P>
+        <button>CREATE WORKOUT PLAN</button>
+    </div>
+
+    <div id="footer">
+        <div>
+            <h3>Products</h3>
+            <p>Elite Membership</p>
+            <p>Coach</p>
+            <p>Signup</p>
+            <p>Login</p>
+        </div>
+        <div>
+            <h3>Resource</h3>
+            <p>Workout Plans</p>
+            <p>Exercise Database</p>
+            <p>Community</p>
+            <p>Help Center</p>
+           
+        </div>
+        <div>
+            <h3>Legal Press</h3>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>IP / DMCA Notices</p>
+            <p>Press & Media</p>
+        </div>
+        <div>
+            <h3>Follow US</h3>
+            <p>Blog</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+        </div>
+    </div>
+
+    <p class="head5">Copyright © 2010 - 2022 Jefit, Inc.</p>
+    <p class="head5">All Rights Reserved.</p>
+</body>
+</html>
