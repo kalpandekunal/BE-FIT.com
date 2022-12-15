@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body{
+            background-color: rgb(204, 215, 224);
+        }
+        form{
+  margin:0 auto;
+  margin-top:50px;
+  width:30%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding:30px;
+  background-color: #ceedf0;
+}
+label{
+  font-size:20px;
+}
+input[type="text"],input[type="number"],input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"]:hover {
+  background-color: #3973b6;
+}
+
+input[type="submit"] {
+  background-color: #2b619e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    
+    <form id="form">
+        <label for="">Username</label><br />
+        <input id="name" type="text" placeholder="Enter a username" /><br />
+        <label for="">Email Address </label><br />
+        <input type="text" id="email" placeholder="Enter Email Address" /><br />
+        <label for="">Mobile Number </label><br />
+        <input id="mbl" type="number" placeholder="Enter Mobile number" /><br />
+        <label for="">Password </label><br />
+        <input id="pass" type="password" placeholder="Enter password" /><br />
+        <input type="submit" />
+      </form>
+</body>
+</html>
+
+<script>
+    let myform = document.getElementById("form");
+
+    let data = JSON.parse(localStorage.getItem("account-data")) || [];
+
+    myform.addEventListener("submit",(event)=>{
+        event.preventDefault();
+
+        formData = {
+            name: form.name.value,
+            email: form.email.value,
+            mobile: form.mbl.value,
+            pass : form.pass.value,
+        };
+        data.push(formData);
+        localStorage.setItem("account-data",JSON.stringify(data));
+        alert("Signup successful");
+        window.location.href="login.html";
+    })
+</script>
