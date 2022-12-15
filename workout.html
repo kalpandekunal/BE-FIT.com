@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+         #nav{
+            display:flex;
+            width:100%;
+            height:60px;
+            background-color: rgb(0, 110, 255);
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 150px;
+        }
+        #nav>div{
+            width:30%;
+            justify-content: space-between;
+            
+        }
+        #nav>img{
+            width:15%;
+        }
+        #nav h1{
+            color: white;
+            font-size: 30px;
+        }
+        #nav>p{
+            color: white;
+            font-size: 20px;
+            
+        }
+        #nav a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            
+        }
+        #nav>div button{
+            font-size: 15px;
+            background-color: white;
+            color: rgb(0, 153, 255);
+            padding-left:10px;
+            padding-right:10px;
+            padding-top:5px;
+            padding-bottom:5px;
+            border-radius:5px;
+            border: 0px;
+        }
+
+
+        #bb{
+            width:60%;
+            margin: auto;
+        }
+        .class{
+            text-align: center;
+        }
+        .class h1{
+            font-size: 40px;
+        }
+        .class p{
+            font-size: 20px;
+        }
+        .days{
+            width: 100%;
+            display: flex;
+            margin: auto;
+           margin-top: 70px;
+        }
+        .days>div{
+            width: 33%;
+           
+            align-items:center ;
+            text-align: center;
+            border:1px solid grey; 
+            border-radius: 3px; 
+        }
+        .days>div:nth-child(1){
+            background-color: yellow;
+        }
+
+        table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #8caacf;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0468aa;
+  color: white;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <!-- <img src="./Logo/logo.png" alt=""> -->
+        <!-- <img src="C:\Users\91705\Desktop\Project1\scared-servant-614\Logo\logo.png" alt=""> -->
+        <a href="index.html"><h1>BE-FIT</h1></a>
+        <p>Get App</p>
+        <a href="workout.html">Workout Plans</a>
+        <p>Exercises</p>
+        <p>Community</p>
+        <p>Coach</p>
+        <p>Elite</p>
+        <a href="login.html">Login</a>
+        <div>
+            <a href="signup.html"><button>Sign Up</button></a>
+        </div>
+    </div>
+
+
+    <div id="bb">
+        <div class="class">
+            <h1>Advance Worout Planner</h1>
+            <p>Plan your workout online and take it on the go. Be-fit’s Advanced Workout Planner is designed to make planning your workout routine for the week simple.</p>
+        </div>
+        <div class="days">
+            <div>
+                <h2>Day-1</h2>
+            </div>
+            <div>
+                <h2>Day-2</h2>
+            </div>
+            <div>
+                <h2>Day-3</h2>
+            </div>
+        </div>
+
+        <table>
+            <!-- Dont change order of columns -->
+            <thead>
+              <tr>
+                <th>Muscle</th>
+                <th>Image</th>
+                <th>Exercise Name</th>
+                <th>Order</th>
+                <th>Reps</th>
+                <th>Sets</th>
+                <th>Interval</th>
+                <th>Rest</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="tricep.html">Triceps</a></td>
+                    <td>
+                        <img width="50%" src="https://www.jefit.com/images/exercises/50_50/620.jpg" alt="">
+                    </td>
+                    <td>Cable Tricep Extection</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>0 s</td>
+                    <td>60 s</td>
+                </tr>
+                <tr>
+                    <td><a href="bicep.html">Biceps</a></td>
+                    <td>
+                        <img width="50%" src="https://www.jefit.com/images/exercises/50_50/408.jpg" alt="">
+                    </td>
+                    <td>Cable Biceps Curl </td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>0 s</td>
+                    <td>60 s</td>
+                </tr>
+                <tr>
+                    <td><a href="back.html">Back</a></td>
+                    <td>
+                        <img width="50%" src="https://www.jefit.com/images/exercises/50_50/1880.jpg" alt="">
+                    </td>
+                    <td>Barbell Clean Deadlift</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>0 s</td>
+                    <td>60 s</td>
+                </tr>
+                <tr>
+                    <td><a href="glutes.html">Glutes</a></td>
+                    <td>
+                        <img width="50%" src="https://www.jefit.com/images/exercises/50_50/1552.jpg" alt="">
+                    </td>
+                    <td>Exercise Band Hip Lift</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>0 s</td>
+                    <td>60 s</td>
+                </tr>
+                <tr>
+                    <td><a href="lowerleg.html">Lower-Leg</a></td>
+                    <td>
+                        <img width="50%" src="https://www.jefit.com/images/exercises/50_50/1576.jpg" alt="">
+                    </td>
+                    <td>Exercise Band Calf Raise</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>0 s</td>
+                    <td>60 s</td>
+                </tr>
+                <tr>
+                    <td><a href="upperleg.html">Upper-Leg</a></td>
+                    <td>
+                        <img width="50%" src="https://www.jefit.com/images/exercises/50_50/3620.jpg" alt="">
+                    </td>
+                    <td>Exercise Band Quad Stretch</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>0 s</td>
+                    <td>60 s</td>
+                </tr>
+            </tbody>
+          </table>
+</div>
+</body>
+</html>
